@@ -1,0 +1,90 @@
+.carousel {
+    height: 75vh;
+}
+
+.carousel-caption {
+    z-index: 10; /* Since positioning the image, we need to help out the caption */
+}
+
+  /* Declare heights because of positioning of img element */
+#myCarousel {
+    height: 100%;
+    background:
+    linear-gradient(
+    rgba(0, 0, 250, 0.25),
+    rgba(150, 150, 200, 0.5)
+    ),
+    url("../../asset/images/sample-image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.carousel-inner .item {
+    width: inherit;
+}
+
+.carousel .item .thumbnails{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel .item .thumbnails .thumbnail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.carousel .item .thumbnails .thumbnail-box .caption {
+    color: #fff;
+}
+
+.carousel-indicators li {
+    background-color: #0b4f6c;
+}
+.carousel-indicators .active {
+    background-color: #fff05a;
+}
+
+.thumbnail-img {
+    height: 75%;
+}
+
+.thumbnail {
+    border-style: none;
+}
+
+.carousel-control {
+    width: 10%;
+}
+
+@media (max-width: 767px){
+    .carousel .item .thumbnails li:not(:first-child){
+        display:none;
+    }
+    .carousel .item .thumbnails{
+        display: flex;
+        align-items: center;
+    }
+    #myCarousel{
+        display: flex;
+        flex-direction: column;
+    }
+}

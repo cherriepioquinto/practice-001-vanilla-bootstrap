@@ -1,0 +1,208 @@
+<!doctype html>
+
+<!-- CAROUSEL SAMPLE 1-->
+<!-- !!BUG: Not responsive!! -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Cherrie Pioquinto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-005.css" rel="stylesheet">
+    <link href="carousel-001.css" rel="stylesheet">
+
+    <!-- Additional fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container header-container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <!-- This part takes care of the hamburger menu-->
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <!-- This part takes care of the hamburger menu-->
+                </button>
+              </div>
+              <div class="container navbar-center">
+                  <div id="navbar" class="navbar-collapse collapse ">
+                      <ul class="nav navbar-nav ">
+                        <!-- text-right text-center can be used to center or move items to right in ul element above-->
+                        <li class="active"><a href="#">Home</a></li>
+                        <li ><a href="#">About</a></li>
+                        <li ><a href="#">Education</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span> Projects <span class="caret"></span></span> </a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header">Front-end Redesigns</li>
+                            <li><a href="#">Camilla Home Care</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">UI/UX Projects</li>
+                            <li><a href="#">Wedding Planner</a></li>
+                            <li><a href="#">CoffeeHouse</a></li>
+                          </ul>
+                        </li>
+                        <li ><a href="#">Contact</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+              </div>
+              <div class="search-container">
+                <form class="form-inline my-2 my-lg-0 search-bar">
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="Search">
+                    <button class="btn btn-outline-secondary search-button" type="submit" id="searchButton">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Fixed navbar -->
+
+    <main>
+        <div id="myCarousel" class="carousel slide" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <ul class="thumbnails">
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-3.jpg" alt="First slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 1</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-2.jpg" alt="Second slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 2</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-3.jpg" alt="Third slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 3</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Preview of first slide</h1>
+                    <p>It shows three items at a time.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <ul class="thumbnails">
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-3.jpg" alt="First slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 1</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-2.jpg" alt="Second slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 2</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail-box">
+                            <div class="thumbnail">
+                                <img class="thumbnail-img" src="../../asset/images/sample-image-3.jpg" alt="Third slide">
+                            </div>
+                            <div class="caption">
+                                <h1> Sample 3</h1>
+                                <p> This is a sample item.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Preview of second slide</h1>
+                    <p>It shows three items at a time.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.carousel -->
+
+          <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4 column-section">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              <div class="col-md-4 column-section">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+             </div>
+              <div class="col-md-4 column-section">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+            </div>
+          </div> <!-- /container -->
+    </main>
+
+    <footer> </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+  </body>
+</html>
